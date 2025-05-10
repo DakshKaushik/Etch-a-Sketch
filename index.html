@@ -12,16 +12,25 @@
     <div class="mainContent">
         <div cLass="options">
             <input type="color" id="colorPicker" >
-            <button id ="colorMode">Color Mode</button>
+            <button id ="colorMode" class="highlighted">Color Mode</button>
             <button id="rainbowMode">Rainbow Mode</button>
             <button id="eraser">Eraser</button>
+            <button id="gridLines">Hide Grid Lines</button>
             <button id="clear">Clear</button>
             <label for="gridSize"></label>
-            <input type="range" id="gridSize" min="8" max="64" value="8" oninput="output.value=`${gridSize.value} X ${gridSize.value}`">
+            <input type="range" id="gridSizeSlider" min="8" max="64" value="8">
             <output id="output">8 X 8</output>
         </div>
         <div class="gridContainer">
         </div>
+    </div>
+    <div class="footer">
+        <h3>Made by Daksh</h3>
+        <a href="https://github.com/DakshKaushik/Etch-a-Sketch" target="_blank" rel="noopener noreferrer">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+            alt="GitHub"
+            style="width: 32px; height: 32px;">
+        </a>
     </div>
 </body>
 </html>
